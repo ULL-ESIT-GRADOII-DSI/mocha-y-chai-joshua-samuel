@@ -40,4 +40,28 @@ describe("Temperatura", function() {
     });
   });
     
+    describe("Celsius", function() {
+    describe("Constructor", function() {
+      it("Debería tener un valor", function() {
+        var c = new Celsius(5);
+        expect(c.valor).to.equal(5);
+      });
+    });
+    });
+    describe("Farenheit", function() {
+    describe("Constructor", function() {
+      it("Debería tener un valor", function() {
+        var f = new Fahrenheit(5);
+        expect(f.valor).to.equal(5);
+      });
+    });
+    });
+    describe("Kelvin", function() {
+    describe("Constructor", function() {
+      it("Debería tener un valor", function() {
+        var k = new Kelvin(5);
+        expect(k.valor).to.equal(5);
+      });
+    });
+    });
 });
