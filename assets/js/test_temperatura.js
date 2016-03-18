@@ -12,6 +12,7 @@ describe("Medida", function() {
     it("Debería crearse con 1 parámetro", function() {
       var t = new Medida (5);
       expect(t.valor).to.equal(5);
+      expect(t.tipo).to.equal(undefined);
     });
     
     it("No debería crearse sin parámetros", function() {
