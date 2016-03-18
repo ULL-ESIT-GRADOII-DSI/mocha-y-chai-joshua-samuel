@@ -18,6 +18,20 @@ describe("Medida", function() {
       expect(new Medida ()).to.equal.undefined;
     });
   });
+  
+  describe("Convertir", function() {
+    it("Debería devolver un 'Error...' expresión no válida", function() {
+        expect(Medida.convertir (null)).to.equal("Introduzca una temperatura valida: 330e-1 F to C");
+    });
+    
+    it("Debería devolver un 'Error...' no se encuentra destino", function() {
+        expect(Medida.convertir ("100 C to jjj")).to.equal('Desconozco como convertir desde "c" hasta "jjj"');
+    });
+    
+   it("Debería devolver un objeto Medida con el valor de cambio", function() {
+        expect(Medida.convertir ("100 F K")).to.equal("310.93 Kelvin");
+    });
+  });
     
 });
 
