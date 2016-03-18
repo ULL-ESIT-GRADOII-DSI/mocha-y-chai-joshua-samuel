@@ -46,6 +46,18 @@ describe("Temperatura", function() {
         var c = new Celsius(5);
         expect(c.valor).to.equal(5);
       });
+      
+       it("Debería de converir de Celsius a Fahrenheit", function() {
+        var c = (new Celsius(5)).toFahrenheit();
+        expect(Math.round(c)).to.equal(41.00);
+      });
+      
+         it("Debería de converir de Celsius a Kelvin", function() {
+        var c = (new Celsius(0)).toKelvin();
+        expect(Math.round(c)).to.equal(273);
+      });
+      
+      
     });
     });
     describe("Farenheit", function() {
