@@ -81,11 +81,22 @@ describe("Temperatura", function() {
     });
     });
     describe("Kelvin", function() {
-    describe("Constructor", function() {
+    describe("Clase Kelvin", function() {
       it("Debería tener un valor", function() {
         var k = new Kelvin(5);
         expect(k.valor).to.equal(5);
       });
+      
+      it("Debería de converir de Kelvin a Fahrenheit", function() {
+        var c = (new Kelvin(261)).toFahrenheit();
+        expect(Math.round(c)).to.equal(10);
+      });
+      
+         it("Debería de converir de Kelvin a Celsius", function() {
+        var c = (new Kelvin(0)).toCelsius();
+        expect(Math.round(c)).to.equal(-273);
+      });
+      
     });
     });
 });
