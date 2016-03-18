@@ -41,7 +41,7 @@ describe("Temperatura", function() {
   });
     
     describe("Celsius", function() {
-    describe("Constructor", function() {
+    describe("Clase Celsius", function() {
       it("Debería tener un valor", function() {
         var c = new Celsius(5);
         expect(c.valor).to.equal(5);
@@ -61,11 +61,23 @@ describe("Temperatura", function() {
     });
     });
     describe("Farenheit", function() {
-    describe("Constructor", function() {
+    describe("Clase Farenheit", function() {
       it("Debería tener un valor", function() {
         var f = new Fahrenheit(5);
         expect(f.valor).to.equal(5);
       });
+    
+    
+    it("Debería de converir de Fahrenheit a Celsius", function() {
+        var f = (new Fahrenheit(41)).toCelsius();
+        expect(Math.round(f)).to.equal(5);
+      });
+      
+         it("Debería de converir de Celsius a Kelvin", function() {
+        var f = (new Fahrenheit(10)).toKelvin();
+        expect(Math.round(f)).to.equal(261);
+      });
+      
     });
     });
     describe("Kelvin", function() {
