@@ -14,8 +14,8 @@ Este repositorio aloja un conversor de temperaturas y sus correspondientes test
 
 **Página de la práctica**
 
-* [Sitio web de la página](https://ULL-ESIT-GRADOII-DSI.github.io/eliminacion-del-switch-smell-joshua-samuel)
-* [Testing de la práctica](http://losnen.github.io/mocha-y-chai-joshua-samuel/test)
+* [Sitio web de la página](https://ULL-ESIT-GRADOII-DSI.github.io/mocha-y-chai-joshua-samuel)
+* [Testing de la práctica](https://ULL-ESIT-GRADOII-DSI.github.io/mocha-y-chai-joshua-samuel/test)
 
 **Página del autor**
 
