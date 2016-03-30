@@ -10,8 +10,8 @@ describe("Medida", function() {
     });
     
     it("Debería crearse con 1 parámetro", function() {
-      var t = new Medida (5);
-      expect(t.valor).to.equal(5);
+      var t = new Medida ('5f');
+      expect(t.valor).to.equal('5f');
       expect(t.tipo).to.equal(undefined);
     });
     
