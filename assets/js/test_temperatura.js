@@ -10,8 +10,8 @@ describe("Medida", function() {
     });
     
     it("Debería crearse con 1 parámetro", function() {
-      var t = new Medida (5);
-      expect(t.valor).to.equal(5);
+      var t = new Medida ('5f');
+      expect(t.valor).to.equal('5f');
       expect(t.tipo).to.equal(undefined);
     });
     
@@ -21,11 +21,11 @@ describe("Medida", function() {
   });
   
   describe("Convertir", function() {
-    it("Debería devolver un 'Error...' expresión no válida", function() {
+    it("(EDGE)Debería devolver un 'Error...' expresión no válida", function() {
         expect(Medida.convertir (null)).to.equal("Introduzca una temperatura valida: 330e-1 F to C");
     });
     
-    it("Debería devolver un 'Error...' no se encuentra destino", function() {
+    it("(EDGE)Debería devolver un 'Error...' no se encuentra destino", function() {
         expect(Medida.convertir ("100 C to jjj")).to.equal('Desconozco como convertir desde "c" hasta "jjj"');
     });
     
